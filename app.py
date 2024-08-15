@@ -14,7 +14,7 @@ def home():
     return "hellow world hiii how r u "
 
 #  api exist at this path 
-@app.route('/predict',methods = ['post'])
+@app.route('/predict',methods = ['POST'])
 def predict():
     cgpa = request.form.get('cgpa')
     iq = request.form.get('iq')
